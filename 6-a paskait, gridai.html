@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>6-a, flex metod</title>
+</head>
+<style>
+   .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   p {
+      font-size: 32px;
+   }
+
+   .flex-item-1 {
+      width: 100%;
+      background-color: cornflowerblue;
+   }
+
+   .flex-item-2,
+   .flex-item-3 {
+      width: 50%;
+      background-color: rgb(237, 100, 207);
+   }
+
+   .geltona {
+      background-color: yellow;
+   }
+
+   .raudona {
+      background-color: red;
+   }
+
+   .zalia {
+      background-color: green;
+   }
+
+
+   .col-1 {
+      width: 8.33%;
+   }
+
+   .col-2 {
+      width: 16.66%;
+   }
+
+   .col-3 {
+      width: 25%;
+   }
+
+   .col-4 {
+      width: 33.33%;
+   }
+
+   .col-5 {
+      width: 41.66%;
+   }
+
+   .col-6 {
+      width: 50%;
+   }
+
+   .col-7 {
+      width: 58.33%;
+   }
+
+   .col-8 {
+      width: 66.66%;
+   }
+
+   .col-9 {
+      width: 75%;
+   }
+
+   .col-10 {
+      width: 83.33%;
+   }
+
+   .col-11 {
+      width: 91.66%;
+   }
+
+   .col-12 {
+      width: 100%;
+   }
+
+   .row {
+      float: left;
+      width: 100%;
+   }
+
+   [class*="col-"] {
+      float: left;
+
+   }
+
+
+
+   img {
+      width: 100%;
+      height: 250px;
+   }
+
+   @media screen and (min-width: 501px) and (max-width: 1000px) {
+      .col-1m {
+         width: 60%;
+      }
+
+      .col-2m {
+         width: 100%;
+      }
+
+   }
+
+   @media screen and (max-width: 500px) {
+
+      float: left;
+
+      img {
+         width: 100%;
+         heigth: 100%;
+      }
+
+
+      .col-1sm {
+         width: 8.33%;
+      }
+
+      .col-2sm {
+         width: 16.66%;
+      }
+
+      .col-3sm {
+         width: 25%;
+      }
+
+      .col-4sm {
+         width: 33.33%;
+      }
+
+      .col-5sm {
+         width: 41.66%;
+      }
+
+      .col-6sm {
+         width: 50%;
+      }
+
+      .col-7sm {
+         width: 58.33%;
+      }
+
+      .col-8sm {
+         width: 66.66%;
+      }
+
+      .col-9sm {
+         width: 75%;
+      }
+
+      .col-10sm {
+         width: 83.33%;
+      }
+
+      .col-11sm {
+         width: 91.66%;
+      }
+
+      .col-12sm {
+         width: 100%;
+      }
+   }
+</style>
+</head>
+
+<body>
+   <div class="row">
+      <div class="col-6 .col-1m raudona">
+         Tekstas<br> Tekstas</div>
+      <div class="col-6 col-12sm col-1m geltona"><img
+            src="https://images.unsplash.com/photo-1624748459849-a07a11f3d764?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-4 col-6sm .col-1m raudona">dar tekst</div>
+      <div class="col-9 col-6sm .col-1m zalia">dar tekst</div>
+   </div>
+
+   <div class="row">
+      <div class="col-4 zalia">dar tekst</div>
+      <div class="col-4 col-1m geltona">dar tekst</div>
+      <div class="col-5 geltona">dar tekst</div>
+   </div>
+
+   <div class="row">
+      <div class="col-12 raudona">dar tekst</div>
+   </div>
+
+   <div class="row">
+      <div class="col-1 geltona">dar tekst</div>
+      <div class="col-1 zalia">dar tekst</div>
+      <div class="col-1 raudona">dar tekst</div>
+      <div class="col-2 zalia">dar tekst</div>
+   </div>
+   <div class="row">
+      <div class="col-1 col-6sm geltona">dar tekst</div>
+      <div class="col-1 raudona">dar tekst</div>
+      <div class="col-1 col-12sm zalia">dar tekst</div>
+      <div class="col-1 col-6sm geltona">dar tekst</div>
+      <div class="col-1 raudona">dar tekst</div>
+      <div class="col-1 zalia">dar tekst</div>
+      <div class="col-1 col-9sm geltona">dar tekst</div>
+      <div class="col-1 zalia">dar tekst</div>
+      <div class="col-1 col-9sm raudona">dar tekst</div>
+      <div class="col-2 zalia">dar tekst</div>
+   </div><br>
+
+
+   <div class="container">
+      <h1> Flexo pavyzdys</h1>
+      <div class="flex-container">
+         <div class="flex-item-1">
+            <p> 1 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-2">
+            <p> 2 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-3">
+            <p> 3tekstas bet koks</p>
+         </div>
+         <div class="flex-item-4 zalia">
+            <p> 4 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-5 raudona">
+            <p> 5 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-6 geltona">
+            <p> 6 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-7">
+            <p> 7 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-8">
+            <p> 8 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-9">
+            <p> 9 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-10">
+            <p> 10 tekstas bet koks</p>
+         </div>
+
+
+      </div>
+   </div>
+
+</body>
+
+</html>
