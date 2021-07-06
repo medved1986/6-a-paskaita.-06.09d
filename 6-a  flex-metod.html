@@ -15,7 +15,7 @@
    }
 
    p {
-      font-size: 32px;
+      font-size: 24px;
    }
 
    .flex-item-1 {
@@ -27,6 +27,30 @@
    .flex-item-3 {
       width: 50%;
       background-color: rgb(237, 100, 207);
+   }
+
+   .flex-item-4 {
+      width: 70%;
+   }
+
+   .flex-item-5 {
+      width: 30%;
+   }
+
+   .flex-item-6 {
+      width: 33%;
+   }
+
+   .flex-item-7 {
+      width: 33%;
+   }
+
+   .flex-item-8 {
+      width: 33%;
+   }
+
+   .flex-item-9 {
+      width: 120%;
    }
 
    .geltona {
@@ -118,9 +142,15 @@
 
    }
 
-   @media screen and (max-width: 500px) {
+   @media screen and (max-width: 600px) {
+      .flex-container {
+         flex-direction: column;
+         flex-wrap: wrap;
+      }
 
-      float: left;
+      [class*="flex-item-"] {
+         width: 100%;
+      }
 
       img {
          width: 100%;
@@ -180,6 +210,44 @@
 </head>
 
 <body>
+   <div class="container">
+      <h1> Flexo pavyzdys</h1>
+      <div class="flex-container">
+         <div class="flex-item-1">
+            <p> 1 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-2">
+            <p> 2 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-3">
+            <p> 3tekstas bet koks</p>
+         </div>
+         <div class="flex-item-4 zalia">
+            <p> 4 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-5 raudona">
+            <p> 5 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-6 geltona">
+            <p> 6 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-7 raudona">
+            <p> 7 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-8 geltona">
+            <p> 8 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-9 zalia">
+            <p> 9 tekstas bet koks</p>
+         </div>
+         <div class="flex-item-10">
+            <p> 10 tekstas bet koks</p>
+         </div>
+
+
+      </div>
+   </div>
+
    <div class="row">
       <div class="col-6 .col-1m raudona">
          Tekstas<br> Tekstas</div>
@@ -219,46 +287,9 @@
       <div class="col-1 zalia">dar tekst</div>
       <div class="col-1 col-9sm raudona">dar tekst</div>
       <div class="col-2 zalia">dar tekst</div>
-   </div><br>
-
-
-   <div class="container">
-      <h1> Flexo pavyzdys</h1>
-      <div class="flex-container">
-         <div class="flex-item-1">
-            <p> 1 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-2">
-            <p> 2 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-3">
-            <p> 3tekstas bet koks</p>
-         </div>
-         <div class="flex-item-4 zalia">
-            <p> 4 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-5 raudona">
-            <p> 5 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-6 geltona">
-            <p> 6 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-7">
-            <p> 7 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-8">
-            <p> 8 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-9">
-            <p> 9 tekstas bet koks</p>
-         </div>
-         <div class="flex-item-10">
-            <p> 10 tekstas bet koks</p>
-         </div>
-
-
-      </div>
    </div>
+
+
 
 </body>
 
